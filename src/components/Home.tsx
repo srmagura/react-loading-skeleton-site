@@ -1,6 +1,8 @@
 import React from "react";
 import { Post } from "./Post";
 import { SimplePost } from "./SimplePost";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Home = (): React.ReactElement => (
   <div>
@@ -9,9 +11,19 @@ export const Home = (): React.ReactElement => (
       Make beautiful, animated loading skeletons that automatically adapt to
       your app.
     </p>
-    <Post />
-    <Post />
-
+    <div className="post-grid">
+      <Post loading />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
+        <FontAwesomeIcon icon={faArrowRight} size="4x" />
+      </div>
+      <Post loading={false} />
+    </div>
     <h2>Adapts to your existing styles</h2>
     <p>
       The `Skeleton` component should be used directly in your components in
@@ -21,10 +33,10 @@ export const Home = (): React.ReactElement => (
       automatically sized to the correct dimensions.
     </p>
 
-    <h2>Don&apost make dedicated skeleton screens</h2>
+    <h2>Don't make dedicated skeleton screens</h2>
     <p>
-      Instead, make components with _built-in_ skeleton states. This approach is
-      beneficial because:
+      Instead, make components with <em>built-in</em> skeleton states. This
+      approach is beneficial because:
     </p>
     <div>
       <ol>
@@ -43,8 +55,9 @@ export const Home = (): React.ReactElement => (
     <h2>Documentation / GitHub</h2>
     <h2>Fully themable</h2>
     <p>
-      Customize individual skeletons with props, or render a `SkeletonTheme` to
-      style all skeletons below it in the React hierarchy.
+      Customize individual skeletons with props, or render a{" "}
+      <code>SkeletonTheme</code> to style all skeletons below it in the React
+      hierarchy.
     </p>
 
     <SimplePost />
