@@ -5,3 +5,8 @@
 .post-grid {
   display: flex;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
