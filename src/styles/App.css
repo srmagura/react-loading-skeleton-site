@@ -1,15 +1,20 @@
+.App {
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
 .post-grid {
   display: flex;
   justify-content: center;
 }
 
 .post {
-  border: 2px solid black;
-  padding: 20px;
+  border: 0.125rem solid black;
+  padding: 1.25rem;
 }
 
 .faIcon {
-  margin: 30px;
+  margin: 1.875rem;
 }
 
 a {
@@ -19,23 +24,19 @@ a {
 }
 
 #logo {
-  width: 80px;
+  width: 5rem;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
-}
-
-body {
-  margin: 30px;
+  margin-bottom: 6.25rem;
 }
 
 #github {
   background-color: #77c1ff;
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 #github-link,
@@ -45,20 +46,13 @@ body {
 
 #code-sandbox {
   background-color: #c762fd;
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .simple-post-grid {
-  margin: 20px;
-}
-
-p,
-ol {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
+  margin: 1.25rem;
 }
 
 .simple-post {
-  margin: 20px;
+  margin: 1.25rem;
 }

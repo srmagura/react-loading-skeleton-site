@@ -28,10 +28,10 @@ export const Home = (): React.ReactElement => {
       <header>
         <img src={logoUrl} alt="Skeleton Logo" id="logo" />
         <h1>React Loading Skeleton</h1>
-        <p>
+        <h2>
           Make beautiful, animated loading skeletons that automatically adapt to
           your app.
-        </p>
+        </h2>
       </header>
       <div className="post-grid">
         <Post loading />
