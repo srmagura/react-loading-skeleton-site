@@ -43,52 +43,55 @@ export const Home = (): React.ReactElement => {
         </div>
         <Post loading={false} />
       </div>
-      <h2>Adapts to your existing styles</h2>
-      <p>
-        The <code>Skeleton</code> component should be used directly in your
-        components in place of content that is loading. While other libraries
-        require you to meticulously craft a skeleton screen that matches the
-        font size, line height, and margins of your content, the `Skeleton`
-        component is automatically sized to the correct dimensions.
-      </p>
-
-      <h2>Don't make dedicated skeleton screens</h2>
-      <p>
-        Instead, make components with <em>built-in</em> skeleton states. This
-        approach is beneficial because:
-      </p>
       <div>
-        <ol>
-          <li>It keeps styles in sync.</li>
-          <li>
-            Components should represent all possible states — loading included.
-          </li>
-          <li>
-            It allows for more flexible loading patterns. In the blog post
-            example above, it's possible to have the title load before the body,
-            while having both pieces of content show loading skeletons at the
-            right time.
-          </li>
-        </ol>
+        <h2>Adapts to your existing styles</h2>
+        <p>
+          The <code>Skeleton</code> component should be used directly in your
+          components in place of content that is loading. While other libraries
+          require you to meticulously craft a skeleton screen that matches the
+          font size, line height, and margins of your content, the `Skeleton`
+          component is automatically sized to the correct dimensions.
+        </p>
+
+        <h2>Don't make dedicated skeleton screens</h2>
+        <p>
+          Instead, make components with <em>built-in</em> skeleton states. This
+          approach is beneficial because:
+        </p>
+        <div>
+          <ol>
+            <li>It keeps styles in sync.</li>
+            <li>
+              Components should represent all possible states — loading
+              included.
+            </li>
+            <li>
+              It allows for more flexible loading patterns. In the blog post
+              example above, it's possible to have the title load before the
+              body, while having both pieces of content show loading skeletons
+              at the right time.
+            </li>
+          </ol>
+        </div>
+        <Button id="github">
+          <a
+            id="github-link"
+            href="https://github.com/dvtng/react-loading-skeleton"
+            target="_blank"
+          >
+            Documentation / GitHub
+          </a>
+        </Button>
+        <Button id="code-sandbox">
+          <a
+            id="code-sandbox-link"
+            href="https://codesandbox.io/s/react-loading-skeleton-3xwil?file=/src/App.tsx"
+            target="_blank"
+          >
+            Open on CodeSandbox
+          </a>
+        </Button>
       </div>
-      <Button id="github">
-        <a
-          id="github-link"
-          href="https://github.com/dvtng/react-loading-skeleton"
-          target="_blank"
-        >
-          Documentation / GitHub
-        </a>
-      </Button>
-      <Button id="code-sandbox">
-        <a
-          id="code-sandbox-link"
-          href="https://codesandbox.io/s/react-loading-skeleton-3xwil?file=/src/App.tsx"
-          target="_blank"
-        >
-          Open on CodeSandbox
-        </a>
-      </Button>
       <h2>Fully themable</h2>
       <p>
         Customize individual skeletons with props, or render a{" "}
@@ -112,6 +115,7 @@ export const Home = (): React.ReactElement => {
         />
         Loading
       </label>
+      <br />
       <Button>
         <a
           href="https://github.com/srmagura/react-loading-skeleton-site"

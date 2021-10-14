@@ -41,7 +41,12 @@ a {
 }
 
 #logo {
-  width: 5rem;
+  width: 7rem;
+}
+
+code {
+  background-color: gainsboro;
+  padding: 0.3rem;
 }
 
 header {
@@ -71,10 +76,22 @@ header {
 .simple-post-grid {
   margin: 1.25rem;
   display: flex;
+  justify-content: center;
 }
 
 .simple-post {
   margin: 1.25rem;
+  width: 25rem;
+}
+
+.whole-grid {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20px;
+  /* width: 540px; */
+  flex-wrap: wrap;
+  height: 280px;
 }
 
 @media only screen and (max-width: 37.5rem) {

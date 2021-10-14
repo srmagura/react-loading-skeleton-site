@@ -12,30 +12,41 @@ export const Post = ({ loading }: PostProps): React.ReactElement => (
   <div className="post">
     <div>
       {loading ? (
-        <div>
-          <div>
-            <Skeleton height={62} width={62} circle={true} />
-            <Skeleton height={25} width={500} />
-          </div>
-          <div>
-            <Skeleton />
-            <Skeleton />
+        <div style={{ backgroundColor: "#c762fd", padding: "70px" }}>
+          <div
+            style={{
+              backgroundColor: "white",
+              padding: "20px",
+              width: "540px",
+              height: "280px",
+            }}
+          >
+            <div className="column1">
+              <Skeleton height={62} width={62} circle={true} />
+              <Skeleton />
+            </div>
+            <div className="column2">
+              <Skeleton />
+              <Skeleton />
+            </div>
           </div>
         </div>
       ) : (
-        <div>
-          <div>
-            <FontAwesomeIcon icon={faSmile} size="4x" />
-            <p>John Doe</p>
-          </div>
-          <div>
-            <h3>Use React Loading Skeleton!</h3>
-            <p style={{ width: "500px" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nec justo feugiat, auctor nunc ac, volutpat arcu.
-              Suspendisse faucibus aliquam ante, sit amet iaculis dolor posuere
-              et. In ut placerat leo.
-            </p>
+        <div style={{ backgroundColor: "#77c1ff", padding: "70px" }}>
+          <div style={{ backgroundColor: "white", padding: "20px" }}>
+            <div>
+              <FontAwesomeIcon icon={faSmile} size="4x" />
+              <p>John Doe</p>
+            </div>
+            <div>
+              <h3>Use React Loading Skeleton!</h3>
+              <p style={{ width: "500px" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum nec justo feugiat, auctor nunc ac, volutpat arcu.
+                Suspendisse faucibus aliquam ante, sit amet iaculis dolor
+                posuere et. In ut placerat leo.
+              </p>
+            </div>
           </div>
         </div>
       )}
