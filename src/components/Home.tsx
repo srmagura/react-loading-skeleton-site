@@ -10,13 +10,16 @@ export const Home = (): React.ReactElement => {
   const logoUrl = `${process.env.PUBLIC_URL}/logo.svg`;
   const themes: SimpleSkeletonThemeProps[] = [
     {
+      title: ["baseColor", "highlightColor"],
       baseColor: "#77c1ff",
       highlightColor: "#c762fd",
     },
     {
+      title: ["borderRadius={0}"],
       borderRadius: 0,
     },
     {
+      title: ["direction='rtl'"],
       direction: "rtl",
     },
   ];
@@ -71,15 +74,23 @@ export const Home = (): React.ReactElement => {
           </li>
         </ol>
       </div>
-      <Button>
-        <h2>
-          <a
-            href="https://github.com/dvtng/react-loading-skeleton"
-            target="_blank"
-          >
-            Documentation / GitHub
-          </a>
-        </h2>
+      <Button id="github">
+        <a
+          id="github-link"
+          href="https://github.com/dvtng/react-loading-skeleton"
+          target="_blank"
+        >
+          Documentation / GitHub
+        </a>
+      </Button>
+      <Button id="code-sandbox">
+        <a
+          id="code-sandbox-link"
+          href="https://codesandbox.io/s/react-loading-skeleton-3xwil?file=/src/App.tsx"
+          target="_blank"
+        >
+          Open on CodeSandbox
+        </a>
       </Button>
       <h2>Fully themable</h2>
       <p>
@@ -103,22 +114,12 @@ export const Home = (): React.ReactElement => {
           Loading
         </label>
       </div>
-      <Button id="github">
+      <Button>
         <a
-          id="github-link"
           href="https://github.com/srmagura/react-loading-skeleton-site"
           target="_blank"
         >
           Edit on GitHub
-        </a>
-      </Button>
-      <Button id="code-sandbox">
-        <a
-          id="code-sandbox-link"
-          href="https://codesandbox.io/s/react-loading-skeleton-3xwil?file=/src/App.tsx"
-          target="_blank"
-        >
-          Open on CodeSandbox
         </a>
       </Button>
     </div>

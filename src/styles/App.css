@@ -58,3 +58,7 @@ ol {
   flex-direction: column;
   width: 500px;
 }
+
+.simple-post {
+  margin: 20px;
+}
