@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-loading-skeleton/static/css/main.e4d03d77.chunk.css",
+    "main.js": "/react-loading-skeleton/static/js/main.2a420c53.chunk.js",
+    "main.js.map": "/react-loading-skeleton/static/js/main.2a420c53.chunk.js.map",
+    "runtime-main.js": "/react-loading-skeleton/static/js/runtime-main.e9eaaa8f.js",
+    "runtime-main.js.map": "/react-loading-skeleton/static/js/runtime-main.e9eaaa8f.js.map",
+    "static/css/2.aa2cac08.chunk.css": "/react-loading-skeleton/static/css/2.aa2cac08.chunk.css",
+    "static/js/2.76d0ac22.chunk.js": "/react-loading-skeleton/static/js/2.76d0ac22.chunk.js",
+    "static/js/2.76d0ac22.chunk.js.map": "/react-loading-skeleton/static/js/2.76d0ac22.chunk.js.map",
+    "index.html": "/react-loading-skeleton/index.html",
+    "static/css/2.aa2cac08.chunk.css.map": "/react-loading-skeleton/static/css/2.aa2cac08.chunk.css.map",
+    "static/css/main.e4d03d77.chunk.css.map": "/react-loading-skeleton/static/css/main.e4d03d77.chunk.css.map",
+    "static/js/2.76d0ac22.chunk.js.LICENSE.txt": "/react-loading-skeleton/static/js/2.76d0ac22.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9eaaa8f.js",
+    "static/css/2.aa2cac08.chunk.css",
+    "static/js/2.76d0ac22.chunk.js",
+    "static/css/main.e4d03d77.chunk.css",
+    "static/js/main.2a420c53.chunk.js"
+  ]
+}
