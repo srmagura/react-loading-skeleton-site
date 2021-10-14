@@ -48,11 +48,11 @@ export const Home = (): React.ReactElement => {
       </div>
       <h2>Adapts to your existing styles</h2>
       <p>
-        The `Skeleton` component should be used directly in your components in
-        place of content that is loading. While other libraries require you to
-        meticulously craft a skeleton screen that matches the font size, line
-        height, and margins of your content, the `Skeleton` component is
-        automatically sized to the correct dimensions.
+        The <code>Skeleton</code> component should be used directly in your
+        components in place of content that is loading. While other libraries
+        require you to meticulously craft a skeleton screen that matches the
+        font size, line height, and margins of your content, the `Skeleton`
+        component is automatically sized to the correct dimensions.
       </p>
 
       <h2>Don't make dedicated skeleton screens</h2>

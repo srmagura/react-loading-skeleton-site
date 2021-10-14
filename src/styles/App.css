@@ -56,3 +56,23 @@ header {
 .simple-post {
   margin: 1.25rem;
 }
+
+@media only screen and (max-width: 37.5rem) {
+  .App {
+    padding: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media only screen and (max-width: 20rem) {
+  .App {
+    font-size: 0.7rem;
+  }
+}
