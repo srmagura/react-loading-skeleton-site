@@ -1,12 +1,60 @@
-/* .App {
-  text-align: center;
-} */
-
 .post-grid {
   display: flex;
+  justify-content: center;
+}
+
+.post {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.faIcon {
+  margin: 30px;
 }
 
 a {
   text-decoration: none;
+  text-transform: none;
   color: black;
+}
+
+#logo {
+  width: 80px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+body {
+  margin: 30px;
+}
+
+#github {
+  background-color: #77c1ff;
+  margin: 10px;
+}
+
+#github-link,
+#code-sandbox-link {
+  color: white;
+}
+
+#code-sandbox {
+  background-color: #c762fd;
+  margin: 10px;
+}
+
+.simple-post-grid {
+  margin: 20px;
+}
+
+p,
+ol {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 }

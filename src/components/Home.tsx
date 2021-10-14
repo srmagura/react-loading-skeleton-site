@@ -7,31 +7,29 @@ import Button from "@mui/material/Button";
 
 export const Home = (): React.ReactElement => {
   const [loading, setLoading] = useState(true);
+  const logoUrl = `${process.env.PUBLIC_URL}/logo.svg`;
   const themes: SimpleSkeletonThemeProps[] = [
     {
-      baseColor: "#FFC371",
-      highlightColor: "#FF5F6D",
-      direction: "ltr",
+      baseColor: "#77c1ff",
+      highlightColor: "#c762fd",
     },
     {
       borderRadius: 0,
-      baseColor: "",
-      highlightColor: "",
-      direction: "ltr",
     },
     {
-      baseColor: "",
-      highlightColor: "",
       direction: "rtl",
     },
   ];
   return (
     <div>
-      <h1>React Loading Skeleton</h1>
-      <p>
-        Make beautiful, animated loading skeletons that automatically adapt to
-        your app.
-      </p>
+      <header>
+        <img src={logoUrl} alt="Skeleton Logo" id="logo" />
+        <h1>React Loading Skeleton</h1>
+        <p>
+          Make beautiful, animated loading skeletons that automatically adapt to
+          your app.
+        </p>
+      </header>
       <div className="post-grid">
         <Post loading />
         <div
@@ -41,7 +39,7 @@ export const Home = (): React.ReactElement => {
             justifyContent: "center",
           }}
         >
-          <FontAwesomeIcon icon={faArrowRight} size="4x" />
+          <FontAwesomeIcon className="faIcon" icon={faArrowRight} size="4x" />
         </div>
         <Post loading={false} />
       </div>
@@ -73,7 +71,7 @@ export const Home = (): React.ReactElement => {
           </li>
         </ol>
       </div>
-      <Button style={{ textTransform: "none" }}>
+      <Button>
         <h2>
           <a
             href="https://github.com/dvtng/react-loading-skeleton"
@@ -89,21 +87,40 @@ export const Home = (): React.ReactElement => {
         <code>SkeletonTheme</code> to style all skeletons below it in the React
         hierarchy.
       </p>
-      {themes.map((theme) => (
-        <SimplePost loading={loading} SkeletonStyles={theme} />
-      ))}
-      <label>
-        <input
-          type="checkbox"
-          checked={loading}
-          value={loading.toString()}
-          onChange={() => setLoading(!loading)}
-        />
-        Loading
-      </label>
-
-      <button type="button">Edit on GitHub</button>
-      <button type="button">Open on CodeSandbox</button>
+      <div className="simple-post-grid">
+        {themes.map((theme) => (
+          <div key={themes.indexOf(theme)}>
+            <SimplePost loading={loading} SkeletonStyles={theme} />
+          </div>
+        ))}
+        <label>
+          <input
+            type="checkbox"
+            checked={loading}
+            value={loading.toString()}
+            onChange={() => setLoading(!loading)}
+          />
+          Loading
+        </label>
+      </div>
+      <Button id="github">
+        <a
+          id="github-link"
+          href="https://github.com/srmagura/react-loading-skeleton-site"
+          target="_blank"
+        >
+          Edit on GitHub
+        </a>
+      </Button>
+      <Button id="code-sandbox">
+        <a
+          id="code-sandbox-link"
+          href="https://codesandbox.io/s/react-loading-skeleton-3xwil?file=/src/App.tsx"
+          target="_blank"
+        >
+          Open on CodeSandbox
+        </a>
+      </Button>
     </div>
   );
 };

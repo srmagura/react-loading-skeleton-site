@@ -9,7 +9,7 @@ export interface PostProps {
 }
 
 export const Post = ({ loading }: PostProps): React.ReactElement => (
-  <div>
+  <div className="post">
     <div>
       {loading ? (
         <Skeleton count={1} height={62} width={62} circle={true} />

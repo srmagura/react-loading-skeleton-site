@@ -22,8 +22,10 @@ export const SimplePost = ({
       <SkeletonTheme
         baseColor={styles.baseColor}
         highlightColor={styles.highlightColor}
-        borderRadius={styles.baseColor}
+        borderRadius={styles.borderRadius}
         direction={styles.direction}
+        height={50}
+        width={300}
       >
         <Skeleton count={2} />
       </SkeletonTheme>
