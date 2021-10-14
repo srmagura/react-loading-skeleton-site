@@ -12,17 +12,33 @@ export const Post = ({ loading }: PostProps): React.ReactElement => (
   <div className="post">
     <div>
       {loading ? (
-        <Skeleton count={1} height={62} width={62} circle={true} />
+        <div>
+          <div>
+            <Skeleton height={62} width={62} circle={true} />
+            <Skeleton height={25} width={500} />
+          </div>
+          <div>
+            <Skeleton />
+            <Skeleton />
+          </div>
+        </div>
       ) : (
-        <FontAwesomeIcon icon={faSmile} size="4x" />
+        <div>
+          <div>
+            <FontAwesomeIcon icon={faSmile} size="4x" />
+            <p>John Doe</p>
+          </div>
+          <div>
+            <h3>Use React Loading Skeleton!</h3>
+            <p style={{ width: "500px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum nec justo feugiat, auctor nunc ac, volutpat arcu.
+              Suspendisse faucibus aliquam ante, sit amet iaculis dolor posuere
+              et. In ut placerat leo.
+            </p>
+          </div>
+        </div>
       )}
-      <p>John Doe</p>
     </div>
-    <h3>Use React Loading Skeleton!</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
-      justo feugiat, auctor nunc ac, volutpat arcu. Suspendisse faucibus aliquam
-      ante, sit amet iaculis dolor posuere et. In ut placerat leo.
-    </p>
   </div>
 );

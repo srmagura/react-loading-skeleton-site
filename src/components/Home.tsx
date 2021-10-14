@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Post } from "./Post";
 import { SimplePost, SimpleSkeletonThemeProps } from "./SimplePost";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Button from "@mui/material/Button";
 
 export const Home = (): React.ReactElement => {
@@ -35,14 +35,11 @@ export const Home = (): React.ReactElement => {
       </header>
       <div className="post-grid">
         <Post loading />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <FontAwesomeIcon className="faIcon" icon={faArrowRight} size="4x" />
+        <div className="post-grid-arrow-right">
+          <FontAwesomeIcon className="faIcon" icon={faArrowRight} size="3x" />
+        </div>
+        <div className="post-grid-arrow-down">
+          <FontAwesomeIcon className="faIcon" icon={faArrowDown} size="3x" />
         </div>
         <Post loading={false} />
       </div>
@@ -104,16 +101,17 @@ export const Home = (): React.ReactElement => {
             <SimplePost loading={loading} SkeletonStyles={theme} />
           </div>
         ))}
-        <label>
-          <input
-            type="checkbox"
-            checked={loading}
-            value={loading.toString()}
-            onChange={() => setLoading(!loading)}
-          />
-          Loading
-        </label>
       </div>
+      <label id="loading">
+        <input
+          id="checkbox"
+          type="checkbox"
+          checked={loading}
+          value={loading.toString()}
+          onChange={() => setLoading(!loading)}
+        />
+        Loading
+      </label>
       <Button>
         <a
           href="https://github.com/srmagura/react-loading-skeleton-site"

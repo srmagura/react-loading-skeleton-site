@@ -1,6 +1,14 @@
 .App {
   padding: 2rem;
   font-size: 1.1rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 .post-grid {
@@ -8,8 +16,17 @@
   justify-content: center;
 }
 
+.post-grid-arrow-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post-grid-arrow-down {
+  display: none;
+}
+
 .post {
-  border: 0.125rem solid black;
   padding: 1.25rem;
 }
 
@@ -37,6 +54,7 @@ header {
 #github {
   background-color: #77c1ff;
   margin: 0.625rem;
+  font-size: 2rem;
 }
 
 #github-link,
@@ -47,10 +65,12 @@ header {
 #code-sandbox {
   background-color: #c762fd;
   margin: 0.625rem;
+  font-size: 2rem;
 }
 
 .simple-post-grid {
   margin: 1.25rem;
+  display: flex;
 }
 
 .simple-post {
@@ -71,8 +91,31 @@ header {
   }
 }
 
+#loading {
+  font-size: 2rem;
+}
+
+#checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 @media only screen and (max-width: 20rem) {
   .App {
     font-size: 0.7rem;
+  }
+  .post-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .post-grid-arrow-right {
+    display: none;
+  }
+  .post-grid-arrow-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
