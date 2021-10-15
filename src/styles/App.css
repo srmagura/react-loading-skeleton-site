@@ -170,14 +170,13 @@ header {
   .App {
     font-size: 0.8rem;
     padding: 0.1rem;
-    margin: 1rem;
+    margin: 0.5rem;
   }
 
   header {
     font-size: 0.6rem;
     margin-bottom: 0.7rem;
     padding: 0.1rem;
-    width: 100%;
   }
 
   #logo {
@@ -186,6 +185,7 @@ header {
 
   .post-grid {
     flex-direction: column;
+    width: 300px;
   }
 
   .post-grid-arrow-right {
@@ -199,16 +199,10 @@ header {
     height: 3rem;
   }
 
-  .grid-item {
-    width: 12rem;
-    height: 8rem;
-    margin: 0.35rem;
-    padding: 0.2rem;
-  }
-
   #purple-border,
   #blue-border {
-    padding: 0.5rem;
+    padding: 0.1rem;
+    margin: 1rem;
   }
 
   .profile-pic {
@@ -228,7 +222,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 200px;
-    width: 400px;
+    width: 250px;
     padding: 0.4rem;
   }
 
@@ -258,18 +252,40 @@ header {
   .simple-post-grid {
     flex-direction: column;
   }
-}
+  .column1 {
+    width: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* @media only screen and (max-width: 37.5rem) {
-  .App {
-    padding: 1rem;
-    font-size: 0.9rem;
+  .column2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 10rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .simple-post-grid {
+    margin: 1.25rem;
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 22.5rem) and (max-width: 50rem) {
+  .App {
+    padding: 1rem;
+    font-size: 0.9rem;
   }
   header {
     margin-bottom: 0.625rem;
   }
-} */
+}
