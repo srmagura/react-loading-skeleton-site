@@ -9,18 +9,11 @@ export interface PostProps {
 }
 
 export const Post = ({ loading }: PostProps): React.ReactElement => (
-  <div className="post">
+  <div>
     <div>
       {loading ? (
-        <div style={{ backgroundColor: "#c762fd", padding: "70px" }}>
-          <div
-            style={{
-              backgroundColor: "white",
-              padding: "20px",
-              width: "540px",
-              height: "280px",
-            }}
-          >
+        <div id="purple-border">
+          <div className="grid-item">
             <div className="column1">
               <Skeleton height={62} width={62} circle={true} />
               <Skeleton />
@@ -32,8 +25,8 @@ export const Post = ({ loading }: PostProps): React.ReactElement => (
           </div>
         </div>
       ) : (
-        <div style={{ backgroundColor: "#77c1ff", padding: "70px" }}>
-          <div style={{ backgroundColor: "white", padding: "20px" }}>
+        <div id="blue-border">
+          <div className="grid-item">
             <div>
               <FontAwesomeIcon icon={faSmile} size="4x" />
               <p>John Doe</p>

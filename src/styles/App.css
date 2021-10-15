@@ -7,13 +7,28 @@
   justify-content: center;
 }
 
-h1 {
-  font-size: 4rem;
-}
-
 .post-grid {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  width: 43.75rem;
+  height: 18.75rem;
+  margin: 3.125rem;
+  background-color: white;
+  padding: 1.875rem;
+}
+
+#purple-border {
+  background-color: #c762fd;
+  padding: 1.875rem;
+}
+
+#blue-border {
+  background-color: #77c1ff;
+  padding: 1.875rem;
 }
 
 .post-grid-arrow-right {
@@ -24,10 +39,6 @@ h1 {
 
 .post-grid-arrow-down {
   display: none;
-}
-
-.post {
-  padding: 1.25rem;
 }
 
 .faIcon {
@@ -47,6 +58,8 @@ a {
 code {
   background-color: gainsboro;
   padding: 0.3rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 header {
@@ -54,6 +67,17 @@ header {
   flex-direction: column;
   align-items: center;
   margin-bottom: 6.25rem;
+}
+
+.button-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }
 
 #github {
@@ -89,23 +113,8 @@ header {
   flex-direction: row;
   background-color: white;
   padding: 20px;
-  /* width: 540px; */
   flex-wrap: wrap;
   height: 280px;
-}
-
-@media only screen and (max-width: 37.5rem) {
-  .App {
-    padding: 1rem;
-    font-size: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  header {
-    margin-bottom: 0.625rem;
-  }
 }
 
 #loading {
@@ -115,6 +124,7 @@ header {
 #checkbox {
   width: 1.5rem;
   height: 1.5rem;
+  margin-top: 0.65rem;
 }
 
 @media only screen and (max-width: 20rem) {
@@ -134,5 +144,19 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .App {
+    padding: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    margin-bottom: 0.625rem;
   }
 }
