@@ -128,7 +128,7 @@ export const Home = (): React.ReactElement => {
           Loading
         </label>
         <br />
-        <Button>
+        <Button id="edit-button">
           <a
             href="https://github.com/srmagura/react-loading-skeleton-site"
             target="_blank"

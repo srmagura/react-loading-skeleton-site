@@ -16,11 +16,19 @@ export const Post = ({ loading }: PostProps): React.ReactElement => (
           <div className="grid-item">
             <div className="internal-grid">
               <div className="column1">
-                <Skeleton height={68} width={68} circle={true} />
-                <Skeleton width={73} height={23} style={{ margin: "17px" }} />
+                <Skeleton
+                  className="profile-pic"
+                  // height={68}
+                  // width={68}
+                  circle={true}
+                />
+                <Skeleton className="name-bar" />
               </div>
               <div className="column2">
-                <Skeleton height={27} style={{ marginBottom: "27px" }} />
+                <Skeleton
+                  className="post-title"
+                  // height={27} style={{ marginBottom: "27px" }}
+                />
                 <Skeleton count={4} />
               </div>
             </div>
@@ -32,11 +40,11 @@ export const Post = ({ loading }: PostProps): React.ReactElement => (
             <div className="internal-grid">
               <div className="column1">
                 <FontAwesomeIcon icon={faSmile} size="4x" />
-                <p>John Doe</p>
+                <p className="name-bar">John Doe</p>
               </div>
               <div className="column2">
                 <h3>Use React Loading Skeleton!</h3>
-                <p style={{ width: "500px" }}>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum nec justo feugiat, auctor nunc ac, volutpat arcu.
                   Suspendisse faucibus aliquam ante, sit amet iaculis dolor
