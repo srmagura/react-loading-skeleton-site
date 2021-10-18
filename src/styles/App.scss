@@ -1,3 +1,6 @@
+$color1: #c762fd;
+$color2: #77c1ff;
+
 .App {
   padding: 2rem;
   font-size: 1.1rem;
@@ -22,12 +25,12 @@
 }
 
 #purple-border {
-  background-color: #c762fd;
+  background-color: $color1;
   padding: 1.875rem;
 }
 
 #blue-border {
-  background-color: #77c1ff;
+  background-color: $color2;
   padding: 1.875rem;
 }
 
@@ -103,7 +106,7 @@ header {
 }
 
 #github {
-  background-color: #77c1ff;
+  background-color: $color2;
   margin: 0.625rem;
   font-size: 2rem;
 }
@@ -114,7 +117,7 @@ header {
 }
 
 #code-sandbox {
-  background-color: #c762fd;
+  background-color: $color1;
   margin: 0.625rem;
   font-size: 2rem;
 }
@@ -174,9 +177,14 @@ header {
   }
 
   header {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
     margin-bottom: 0.7rem;
     padding: 0.1rem;
+    width: 18rem;
+
+    h2 {
+      width: 15rem;
+    }
   }
 
   #logo {
@@ -185,7 +193,9 @@ header {
 
   .post-grid {
     flex-direction: column;
+    justify-content: center;
     width: 300px;
+    height: 600px;
   }
 
   .post-grid-arrow-right {
@@ -222,8 +232,10 @@ header {
     align-items: center;
     justify-content: center;
     height: 200px;
-    width: 250px;
+    width: 190px;
     padding: 0.4rem;
+    margin: 30px;
+    font-size: 11px;
   }
 
   code {
@@ -251,7 +263,9 @@ header {
 
   .simple-post-grid {
     flex-direction: column;
+    width: 190px;
   }
+
   .column1 {
     width: 4rem;
     height: 100%;
@@ -275,7 +289,7 @@ header {
   }
 
   .simple-post-grid {
-    margin: 1.25rem;
+    margin: 1rem;
     width: 320px;
   }
 }
